@@ -1,10 +1,12 @@
-#! /usr/bin/env ruby
+#! /usr/bin/ruby
 
-def mul_matriz(a, b)
+a = [[2, 0, 1], [3, 0, 0], [5, 1, 1]]   #matriz a
+b = [[1, 0, 1], [1, 2, 1], [1, 1, 0]]   #matriz b
+
 c = Array.new
 
-m, n = a.size, a[1].size
-f, l = b.size, b[1].size
+m, n = a.size, a[0].size
+f, l = b.size, b[0].size
 
 for i in 0...m do
 
@@ -45,4 +47,4 @@ puts "\nEl producto de las Matrices a y b es ="
 
 end
 
-end
+
