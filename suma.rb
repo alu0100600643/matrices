@@ -1,6 +1,7 @@
-#! /user/bin/env ruby
+#! /usr/local/rvm/rubies/ruby-2.0.0-p247/bin/ruby
 
-def matriz(a, b)
+a = [[2, 0 , 1], [3, 0, 0], [5, 1, 1]]
+b = [[1, 0, 1], [1, 2, 1], [1, 1, 0]]
 c = Array.new
 
 m, n = a.size, a[1].size
@@ -17,20 +18,20 @@ for i in 0...m do
 	end
 end
 
-puts "\n La Matriz a es = "
+puts "\nLa Matriz a es = "
 	a.each do |fila|
 	puts fila.join("")
 end
 
 
-puts "\n La Matriz b es = "
+puts "\nLa Matriz b es = "
 	b.each do |fila|
 	puts fila.join("")
 end
 
 
-puts "\n La suma de las matrices a y b es = "
+puts "\nLa suma de las matrices a y b es = "
 	c.each do |fila|
 	puts fila.join("")
 end
-end
+
